@@ -21,7 +21,7 @@ isActive = (type, inverse = false) ->
 
     {className, regex} = view.hash
 
-    className ?= if inverse then 'disabled' else 'active'
+    className ?= if inverse then 'is-disabled' else 'is-selected'
 
     isPath = true if type is 'path'
 
